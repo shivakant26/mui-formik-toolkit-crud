@@ -1,8 +1,14 @@
-import { Button, Dialog, DialogActions, DialogContent, DialogContentText } from "@mui/material";
+import {
+  Button,
+  Dialog,
+  DialogActions,
+  DialogContent,
+  DialogContentText,
+} from "@mui/material";
 import React, { useState } from "react";
 
 const DailogBox = (props) => {
-    console.log(props)
+  console.log(props);
   return (
     <>
       <Dialog
@@ -13,14 +19,34 @@ const DailogBox = (props) => {
       >
         <DialogContent>
           <DialogContentText id="alert-dialog-description">
-            Are you sure you want to delete this Role?
+            Are you sure you want to delete this <b>User</b>?
           </DialogContentText>
         </DialogContent>
         <DialogActions>
-          <Button variant="outlined" onClick={props.onClose}>
+          <Button
+            sx={{
+              ":hover": {
+                bgcolor: "#0078ce",
+                color: "white",
+              },
+            }}
+            variant="outlined"
+            onClick={props.onClose}
+          >
             Cancel
           </Button>
-          <Button variant="outlined" color="success" onClick={props.sure} autoFocus>
+          <Button
+            sx={{
+              ":hover": {
+                bgcolor: "#388748",
+                color: "white",
+              },
+            }}
+            variant="outlined"
+            color="success"
+            onClick={props.sure}
+            autoFocus
+          >
             Sure
           </Button>
         </DialogActions>
