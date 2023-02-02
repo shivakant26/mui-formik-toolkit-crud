@@ -1,0 +1,41 @@
+.first_sect{
+    padding: 20px 20px;
+    
+}
+.table_container{
+    padding: 20px;
+    .role-table-section{
+        padding: 30px 0px;
+        .table-head{
+            background-color: black;
+            tr{
+                th{
+                    color: #fff;
+                    font-size: 16px;
+                    letter-spacing: 1.6px;
+                    text-align: center;
+                    padding: 8px !important;
+                }
+            }
+        }
+        tbody{
+            tr{
+                td{
+                    text-align: center;
+                }
+            }
+        }
+        .del-btn{
+            margin-left: 12px !important;
+            &:hover{
+                background-color: black;
+            }
+        }
+        .edit-btn{
+            transition: .4s;
+            &:hover{
+                background-color: black;
+            }
+        }
+    }
+}

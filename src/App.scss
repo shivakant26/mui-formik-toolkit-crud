@@ -1,0 +1,71 @@
+.App {
+  text-align: center;
+}
+
+.pg-title{
+  font-size: 28px !important;
+  text-transform: uppercase;
+  border: 1px solid gray;
+  display: inline-block;
+  padding: 0px 20px;
+}
+.ui-siderbar{
+  box-shadow: 0px -5px 7px rgba(0,0,0,0.5);
+  min-height: 90vh;
+  .menu-item{
+    display: block;
+    a{
+      text-decoration: none;
+      color:rgb(22, 20, 20);
+      font-size: 16px;
+      padding:10px 6px;
+      transition: .4s;
+      &:hover{
+        color:gray;
+      }
+    }
+  }
+}
+
+// for common table
+
+.table_container{
+  padding: 20px;
+  .ui-heading{
+      text-align: left;
+  }
+  .table-section{
+      padding: 30px 0px;
+      .table-head{
+          background-color: #000 ;
+          tr{
+              th{
+                  color: #fff;
+                  font-size: 16px;
+                  letter-spacing: 1.6px;
+                  text-align: center;
+                  padding: 8px;
+              }
+          }
+      }
+      tbody{
+          tr{
+              td{
+                  text-align: center;
+              }
+          }
+      }
+      .del-btn{
+          margin-left: 12px !important;
+          &:hover{
+              background-color: black;
+          }
+      }
+      .edit-btn{
+          transition: .4s;
+          &:hover{
+              background-color: black;
+          }
+      }
+  }
+}
