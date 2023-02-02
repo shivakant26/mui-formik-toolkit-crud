@@ -73,8 +73,8 @@ const UserForm = () => {
           typeof param?.id !== "undefined" ? "Update User" : "Create User"
           }</h3>
           <form onSubmit={formik.handleSubmit}>
-          <Grid container spacing={2}>
-            <Grid xs={6}>
+          <Grid container sx={{pt:0}} spacing={2}>
+            <Grid item xs={6}>
               <div className="form-field">
                 <TextField
                   name="name"
@@ -90,7 +90,7 @@ const UserForm = () => {
                 />
               </div>
             </Grid>
-            <Grid xs={6}>
+            <Grid item xs={6}>
               <div className="form-field">
                 <TextField
                   name="email"
@@ -107,8 +107,8 @@ const UserForm = () => {
               </div>
             </Grid>
             </Grid>
-            <Grid container spacing={2} columns={16}>
-            <Grid xs={8}>
+            <Grid container spacing={2}>
+            <Grid item xs={6}>
               <div className="form-field">
                 <TextField
                   name="userName"
@@ -126,7 +126,7 @@ const UserForm = () => {
                 />
               </div>
             </Grid>
-            <Grid xs={8}>
+            <Grid item xs={6}>
               <div className="form-field">
                 <TextField
                   name="mobile"
@@ -143,8 +143,8 @@ const UserForm = () => {
               </div>
             </Grid>
             </Grid>
-            <Grid container spacing={2} columns={16}>
-            <Grid xs={8}>
+            <Grid container spacing={2}>
+            <Grid item xs={6}>
               <div className="form-field">
                 <FormControl fullWidth size="small">
                   <InputLabel htmlFor="uncontrolled-native">Rolekey</InputLabel>
@@ -171,7 +171,7 @@ const UserForm = () => {
                 </FormControl>
               </div>
             </Grid>
-            <Grid xs={8}>
+            <Grid item xs={6}>
               <div className="form-field">
                 <TextField
                   name="password"
@@ -190,7 +190,7 @@ const UserForm = () => {
               </div>
             </Grid>
             </Grid>
-            <Grid xs={12}>
+            <Grid item xs={12}>
               <div className="form-field">
                 <Button variant="contained" type="submit">
                   {param.id ? "Update User" : "Create User"}

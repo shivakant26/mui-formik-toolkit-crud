@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import Box from "@mui/material/Box";
 import "./Role.scss";
 import Button from "@mui/material/Button";
-import { Alert, Grid, Snackbar, TextField } from "@mui/material";
+import { Alert, Grid, Snackbar, Stack, TextField } from "@mui/material";
 import { useFormik } from "formik";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate, useParams } from "react-router-dom";
@@ -47,13 +47,13 @@ const RoleForm = () => {
 
   return (
     <>
-      <Box className="form-section">
+      <Stack className="form-section">
         <h3>{
           typeof param?.id !== "undefined" ? "Update Role" : "Create Role"
           }</h3>
           <form onSubmit={formik.handleSubmit}>
-            <Grid container spacing={2} columns={16}>
-              <Grid sm={8}>
+            <Grid container xs={12} spacing={3}>
+              <Grid item sm={6} sx={{ mb: 2 }}>
                 <div className="form-field">
                   <TextField
                     name="roleLabel"
@@ -72,7 +72,7 @@ const RoleForm = () => {
                   />
                 </div>
               </Grid>
-              <Grid sm={8}>
+              <Grid item sm={6} sx={{ mb: 2 }}>
                 <div className="form-field">
                   <TextField
                     name="roleKey"
@@ -99,7 +99,7 @@ const RoleForm = () => {
               </div>
             </Grid>
           </form>
-      </Box>
+      </Stack>
     </>
   );
 };

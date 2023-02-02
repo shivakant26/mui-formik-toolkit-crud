@@ -1,3 +1,11 @@
+# Features
+1. Mui component and Layout
+2. Formik and Validation
+3. Use Redux toolkit
+4. React all feature 
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

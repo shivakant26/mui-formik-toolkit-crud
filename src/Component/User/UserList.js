@@ -17,6 +17,7 @@ import { deleteData, deleteUser } from "../../Redux/userSlice";
 import AddIcon from '@mui/icons-material/Add';
 import { CircularProgress, Dialog, DialogActions, DialogContent, DialogContentText } from "@mui/material";
 import { toast } from "react-toastify";
+import DailogBox from "../../Common/DailogBox/DailogBox";
 
 const UserList = () => {
   const navigate = useNavigate();
@@ -59,22 +60,10 @@ const UserList = () => {
 
   return (
     <>
-    <Dialog
-        open={open}
-        onClose={handleClose}
-        aria-labelledby="alert-dialog-title"
-        aria-describedby="alert-dialog-description"
-      >
-        <DialogContent>
-          <DialogContentText id="alert-dialog-description">
-          Are you sure you want to delete this Role?
-          </DialogContentText>
-        </DialogContent>
-        <DialogActions>
-          <Button variant="outlined" onClick={handleClose}>Cancel</Button>
-          <Button variant="outlined" color="success" onClick={sure} autoFocus>Sure</Button>
-        </DialogActions>
-      </Dialog>
+    {
+      open && 
+      <DailogBox open={open} onClose={handleClose} sure={sure}/>
+    }
       <div className="table_container">
         <Box className="ui-heading">
         <Button variant="outlined" onClick={createUser}>
