@@ -1,0 +1,40 @@
+.swap-main{
+    h2{
+        font-family: 'robotolight';
+        letter-spacing: 2.2px;
+        text-align: left;
+        position: relative;
+        &::after{
+            content: "";
+            position: absolute;
+            height: 2px;
+            width: 142px;
+            background: #c900c8;
+            top: 37px;
+            left: 0;
+        }
+
+    }
+    .card-heading{
+        background: black;
+        font-family: 'robotoregular' !important;
+        color: #fff;
+        padding: 10px 0px;
+        position: sticky;
+        top: 0;
+    }
+    .ct-list{
+        font-family: 'robotolight';
+        padding-top: 0px !important;
+        p{
+            margin: 0 !important;
+            padding: 6px 0px;
+        }
+    }
+    .team{
+        margin: 10px 0px;
+    }
+    .box-group{
+        padding: 62px 0px;
+    }
+}

@@ -8,7 +8,6 @@ import {
 import React, { useState } from "react";
 
 const DailogBox = (props) => {
-  console.log(props);
   return (
     <>
       <Dialog
