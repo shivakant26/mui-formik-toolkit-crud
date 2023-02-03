@@ -1,6 +1,6 @@
 import React from "react";
 import "./PageNotFound.scss";
-import NotImage from "../../Assets/404-banner.jpg";
+import NotImage from "../../Assets/image/404-banner.jpg";
 
 const PageNotFound = () => {
   return (

@@ -33,6 +33,14 @@ const SideBar = () => {
               <Link to="/user-list">User</Link>
             </ListItemButton>
           </ListItem>
+          <ListItem disablePadding>
+            <ListItemButton className="menu-btn">
+              <ListItemIcon sx={{minWidth:"28px"}}>
+              <Person3Icon />
+              </ListItemIcon>
+              <Link to="/swap">Swap</Link>
+            </ListItemButton>
+          </ListItem>
         </List>
       </nav>
     </Box>
