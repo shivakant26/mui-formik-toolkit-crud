@@ -19,7 +19,7 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 const Swap = () => {
-  const [selectdId, setSelectedId] = useState(1);
+  const [selectdId, setSelectedId] = useState(0);
   const [tempArray, setTempArray] = useState([]);
   const [selectdItem, setSelectdItem] = useState(null);
   const [country, setCountry] = useState([

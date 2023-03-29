@@ -60,7 +60,7 @@ const RoleList = () => {
     }
       <div className="table_container">
         <Box className="ui-heading">
-          <Button variant="outlined" onClick={createRole}>
+          <Button variant="outlined" className="create-btn" onClick={createRole}>
             <AddIcon />
             Create Role
           </Button>
