@@ -29,6 +29,11 @@
         p{
             margin: 0 !important;
             padding: 6px 0px;
+            cursor: pointer;
+            transition: .4s;
+            &:hover{
+                background-color: #87ceeb;
+            }
         }
     }
     .team{

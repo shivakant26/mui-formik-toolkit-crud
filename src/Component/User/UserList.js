@@ -66,7 +66,7 @@ const UserList = () => {
     }
       <div className="table_container">
         <Box className="ui-heading">
-        <Button variant="outlined" onClick={createUser}>
+        <Button variant="outlined" className="create-btn" onClick={createUser}>
             <AddIcon />
             Create User</Button>
         </Box>
